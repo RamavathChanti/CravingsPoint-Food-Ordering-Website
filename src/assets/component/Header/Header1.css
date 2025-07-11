@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    height: 45vw;
+    margin: 30px auto;
+    background: url('../../book3.jpg') no-repeat;
+    background-size: contain;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+    .header-contents{
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+        max-width: 50%;
+        bottom: 10%;
+        position: absolute;
+        left: 50px ;
+        animation: fadeIn 4s;
+    }
+.header-contents h2{
+        font-weight: 500;
+        color: white;
+        font-size: max(4.5vw,22px);
+}
+.header-contents p{
+    color: white;
+    font-size: 13px;
+
+}
+
+.header-contents button
+{
+    color: lightslategray;
+    border-radius: 20px;
+    padding: 4px 4px;
+    font-size: max(1vw,13px);
+    border: none;
+    font-weight: lighter;
+}
+
+@media(max-width:1050px)
+{
+    /* .header
+    {
+        height: 38vw;
+    } */
+    .header-contents
+    {
+        max-width: 45%;
+    }
+}
+@media(max-width:750px)
+{
+    .header-contents
+    {
+        max-width: 70%;
+    }
+    .header-contents p
+     {
+        display: none;
+    }
+    .header-contents button
+    {
+        padding: 1vw 3vw;
+    }
+    
+}
+
+
+
